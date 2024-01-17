@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkeTree</title>
+  <link rel="shortcut icon" type="image/webp" href="/public/linktree.webp"/>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+  <button id="trocarCorBotao">Trocar Cor</button>
+  <main class="animate__animated animate__backInRight">
+    <div class="container">
+      <div class="imagem">
+        <img src="https://osegredo.com.br/wp-content/uploads/2023/09/a0a2a07068f4f3028743447d6eede087-675x675-1.jpg.webp" alt="perfil" id="perfil" />
+        <h3>{ seu nome e sobrenome }</h3>
+      </div>
+      <div class="box">
+        <a href="https://www.instagram.com/uepa.parauapebas/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/school/uepa.com.br/" target="_blank">Linkedin</a>
+        <a href="" target="_blank">WhatsApp</a>
+        <p>desenvolvidor por - { seu nome }</p>
+      </div>
+    </div>
+  </main>
+</body>
+<script>
+  document.getElementById('trocarCorBotao').addEventListener('click', function() {
+    trocarCorFundoBody();
+  });
+  function trocarCorFundoBody() {
+    let corAtual = document.body.style.backgroundColor;
+    document.body.style.backgroundColor = corAtual === 'rgb(0, 0, 0)' ? '#ebeef1' : '#000';
+  }
+</script>
+</html>
